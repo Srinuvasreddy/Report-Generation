@@ -1,0 +1,50 @@
+[
+    {
+        "Requirments": "<Application Name>",
+        "Details": "SRINU",
+        "Size": 14,
+        "Style": true
+    },
+    {
+        "Requirments": "<Number of Services>",
+        "Details": "mytrips-api",
+        "Size": 14,
+        "Style": false
+    },
+    {
+        "Requirments": "<App Mem Participated>",
+        "Details": "Avadhanula, Chandrasekhar",
+        "Size": 14,
+        "Style": false
+    },
+    {
+        "Requirments": "<SRE Mem Participated>",
+        "Details": "Anjala Thulasiram, Rajamanickam, Loga",
+        "Size": 14,
+        "Style": false
+    },
+    {
+        "Requirments": "<Date>",
+        "Details": "\"02\/12\/2024\"",
+        "Size": 14,
+        "Style": false
+    },
+    {
+        "Requirments": "<Tools Used>",
+        "Details": "AWS FIS",
+        "Size": 14,
+        "Style": false
+    },
+    {
+        "Requirments": "<Disposition>",
+        "Details": "Modernized",
+        "Size": 14,
+        "Style": false
+    },
+    {
+        "Requirments": "<Environment>",
+        "Details": "SI",
+        "Size": 14,
+        "Style": false
+    }
+]

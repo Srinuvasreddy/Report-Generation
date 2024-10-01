@@ -1,0 +1,23 @@
+[
+    {
+        "Application": "UValuate",
+        "Services": "WEB",
+        "Experiment": "Multi AZ Failure",
+        "Results": "FAIL",
+        "API_URL": "https://shoppingcart-getproducts.api.sre-dev.aws.delta.com/dev/product"
+    },
+    {
+        "Application": "UValuate",
+        "Services": "WEB",
+        "Experiment": "Region Failure",
+        "Results": "PASS",
+        "API_URL": "https://shoppingcart-getproducts.api.sre-dev.aws.delta.com/dev/product"
+    },
+    {
+        "Application": "UValuate",
+        "Services": "WEB",
+        "Experiment": "Single AZ Failure",
+        "Results": "PASS",
+        "API_URL": "https://shoppingcart-getproducts.api.sre-dev.aws.delta.com/dev/product"
+    }
+]
