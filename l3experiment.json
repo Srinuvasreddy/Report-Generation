@@ -1,0 +1,14 @@
+[
+    {
+        "APP_NAME": "shop",
+        "REGION": "us-east-1",
+        "ENV": "dev",    
+        "ACCOUNT_ID": "516669083107",
+        "chaos_enabled": "true",
+        "chaos_experiment_name": "Multi_AZ_Failure",
+        "block_code": "ITSSREBTSP",
+        "TargetSubnetOne": "subnet-0253611d333b101ab",
+        "TargetSubnetTwo": "subnet-058ba2066e89f5437",
+        "TargetSubnetThree": "subnet-0093a3f05da7a6ae9"
+    }
+]
