@@ -1,0 +1,7 @@
+{
+    "Application": "UValuate",
+    "Services": "WEB",
+    "Experiment": "Multi AZ Failure",
+    "Results": "PASS",
+    "API_URL": "https://shoppingcart-getproducts.api.sre-dev.aws.delta.com/dev/product"
+}
