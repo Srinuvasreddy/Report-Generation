@@ -1,9 +1,21 @@
 [
     {
-        "APP_NAME": "shop",
+        "APP_NAME": "Snapshot API",
         "REGION": "us-east-1",
         "ENV": "dev",    
-        "ACCOUNT_ID": "516669083107",
+        "ACCOUNT_ID": "789485304105",
+        "chaos_enabled": "true",
+        "chaos_experiment_name": "Multi_AZ_Failure",
+        "block_code": "ITSSREBTSP",
+        "TargetSubnetOne": "subnet-0253611d333b101ab",
+        "TargetSubnetTwo": "subnet-058ba2066e89f5437",
+        "TargetSubnetThree": "subnet-0093a3f05da7a6ae9"
+    },
+    {
+        "APP_NAME": "Test",
+        "REGION": "us-east-1",
+        "ENV": "dev",    
+        "ACCOUNT_ID": "789485304105",
         "chaos_enabled": "true",
         "chaos_experiment_name": "Multi_AZ_Failure",
         "block_code": "ITSSREBTSP",
