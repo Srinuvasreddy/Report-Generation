@@ -1,0 +1,126 @@
+[
+    {
+        "app_meta_data" : {
+            "APP_NAME": "shop",
+            "REGION": "us-east-1",
+            "ENV": "dev",
+            "ACCOUNT_ID": "516669083107",
+            "chaos_enabled": "true",
+            "BLOCK_CODE": "ITSSREBTSP"
+        },    
+        "l2_chaos_data" : [
+            {
+                "apigw_data" : [
+                    {
+                        "chaos_experiment_name": "ApiGatewayThrottling",
+                        "AWS_RESOURCE": "apigateway",
+                        "chaos_enabled_apigatewayresourcepolicy": "true",
+                        "DurationPolicy": "PT5M",
+                        "ApiIdPolicy": "yxxxupifu0",
+                        "StageNamePolicy": "Stage"
+                    },
+                    {
+                        "chaos_enabled_apigatewaythrottlingpolicy": "true",
+                        "RestApiGwIDThrottling": "yxxxupifu0",
+                        "DurationThrottling": "PT5M",
+                        "RestApiGwThrottlingRate": "1000",
+                        "RestApiGwThrottlingBurst": "200",
+                        "RestApiGwUsagePlanId": "0g78lt",
+                        "StageNameThrottling": "Stage"
+                    }
+                ],
+                "ec2_data" : [
+                    {
+                        "chaos_enabled_ec2stoppolicy": "true",
+                        "TargetInstanceEc2Stop": "i-02b4e645cf90b619b",
+                        "DurationEc2Stop": "PT5M"
+                    },
+                    {
+                        "chaos_enabled_ec2cpustresspolicy": "true",
+                        "CPUStressInstanceId": "i-02b4e645cf90b619b",
+                        "CPUStressLoadPercent": "100",
+                        "CPUStressDurationSeconds": "300"
+                    },
+                    {
+                        "chaos_enabled_ec2stressdiskpolicy": "true",
+                        "DiskStressInstanceId": "i-02b4e645cf90b619b",
+                        "DiskStressPercent": "100",
+                        "DiskStressDurationSeconds": "300"
+                    },
+                    {
+                        "chaos_enabled_ec2stressmemorypolicy": "true",
+                        "MemoryStressInstanceId": "i-02b4e645cf90b619b",
+                        "MemoryStressPercent": "100",
+                        "MemoryStressDurationSeconds": "300"
+                    }
+                ],
+                "iam_data" : [
+                    {
+                        "chaos_enabled_iampolicy": "true",
+                        "Duration": "PT5M",
+                        "chaos_enabled_ec2iamrolepolicy": "true"
+                    }
+                ],
+                "lambda_data" : [
+                    {
+                        "chaos_enabled_lambdatimeoutpolicy": "true",
+                        "LambdaTimeoutTimeoutValue": "16",
+                        "ChaosDurationLambdaTimeout": "120",
+                        "FunctionNameLambdaTimeout": "lambda_function_sample"
+                    },
+                    {
+                        "chaos_enabled_lambdamemorypolicy": "true",
+                        "FunctionNameLambdaMemory": "lambda_function_sample",
+                        "LambdaMemorySize": "219",
+                        "ChaosDurationLambdaMemory": "120"
+                    },
+                    {
+                        "chaos_enabled_lambdatriggerapigatewaydiablepolicy": "true",
+                        "TriggerApiChaosDuration": "190",
+                        "TriggerApiGatewayId": "ofq91furie",
+                        "TriggerApiFunctionName": "lambda_function_sample"
+                    },
+                    {
+                        "chaos_enabled_lambdatriggerdynamodbdisablepolicy": "true",
+                        "TriggerDynamodbChaosDuration": "190",
+                        "TriggerDynamodbFunctionName": "lambda_function_sample"
+                    },
+                    {
+                        "chaos_enabled_lambdamultitimeoutpolicy": "true",
+                        "MultiLambdaTimeoutValue": "19",
+                        "MultiTimeoutChaosDuration": "154",
+                        "MultiTimeoutFunctionName": "lambda_function_sample"
+                    }
+                ],
+                "msk_data" : [
+                    {
+                        "chaos_enabled_brokercountpolicy": "true",
+                        "brokerIds": "1"
+                    },
+                    {
+                        "chaos_enabled_mskpolicy": "true",
+                        "clusterArn": "arn:aws:kafka:us-east-1:516669083107:cluster/ChaosCluster/b6fd71a3-9bd8-44cc-98b5-bc3475e6e85a-21"
+                    },
+                    {
+                        "chaos_enabled_mskrollingrestartpolicy": "true",
+                        "RollingRestartChaosDuration": "300"
+                    },
+                    {
+                        "chaos_enabled_msksecuritypolicy": "true",
+                        "SecurityChaosDuration": "300"
+                    }
+                ],
+                "rds_data" : [
+                    {
+                        "chaos_enabled_targetdbpolicy": "true",
+                        "targetDB": "fis-test"
+                    },
+                    {
+                        "chaos_enabled_targetclusterpolicy": "true",
+                        "targetCluster": "fis-test"
+                    }
+                ]
+            }
+        ]
+    }
+]    
