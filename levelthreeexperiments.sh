@@ -1,3 +1,5 @@
+aws servicecatalog provision-product --product-id prod-uugdzjvcqdv6k --provisioning-artifact-id pa-xjmf6ofgysu2o --provisioned-product-name AWS_FIS_L2_apigateway_abcde --path-id lpv3-6bqioqcfwlelm --provisioning-parameters Key=blockCode,Value=ITSSREBTSP Key=AppName,Value=shop --region us-east-1
+
 #!/bin/bash
 #Read input data
 APP_NAME=$(grep APP_NAME ./params/${ENV}/${APP_NAME}/${BLOCK_CODE}/l3experiment.txt | cut -f2 -d"=")
